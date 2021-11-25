@@ -1,0 +1,41 @@
+<script>
+   /* name='jagadeesh gandlachintha';
+    aCount='0';
+    for(let i=0;i<name.length;i++){
+        if(name[i]=='a'){
+      aCount +=1;
+
+        }
+    }
+    console.log(aCount);*/
+    name='jagadeesh gandlachintha';
+    const obj={};
+    for(let i=0;i<name.length;i++){
+        const Char=name[i];
+        if(!obj[Char]){
+            obj[Char]=0;
+        }
+        obj[Char]++;
+    }
+    console.log(obj);
+
+/*name='jagadeesh gandlachintha';
+const maxChar=(name)=>{
+    const obj={};
+    for(let Char of name){
+        (!obj[Char])?obj[Char]=1:obj[Char]++;
+        let maxNum=0;
+        letmaximumChar='';
+        for(let Char in obj){
+            if(obj[Char]>=maxNum){
+                maxNum=obj[Char]
+                maximumChar=Char
+            }
+        }
+        console.log(`${maximumChar} appears ${maxNum} times`);
+    }
+}
+ maxChar(name);*/
+
+
+</script>

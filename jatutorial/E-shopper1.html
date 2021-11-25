@@ -1,0 +1,412 @@
+<html>
+  <head>
+      <link rel="stylesheet" href="css/all.css">
+    <style>
+    body{
+    color: #666;
+    font-size: 14px;
+    font-family: 'poppins',sans-serif;
+    line-height: 1.80857;
+    font-weight: normal;
+    } 
+   
+     .header-top{
+        position:absolute;
+        width: 100%;
+        height: 8%;
+        background-color:rgb(226, 225, 225);
+      }
+      .navigation{
+        position: absolute;
+        width: 100%;
+      }
+      .navigation  a{
+        position: relative;
+        left: 10%;
+        top: 12px;
+        font-size: 12px;
+        text-decoration: none;
+        float: left;
+      }
+      .navigation h2 a{
+          left: 130px;
+          margin-top: -12px;
+      }
+      .navigation h3 a{
+          left: 260px;
+          margin-top: -25px;
+      }
+      .fab{
+        color: rgb(117, 115, 115);
+      }
+      .nav{
+        position: absolute;
+        width: 100%;
+      }
+      ul{
+               
+        display: block;
+        list-style-type: none;  
+        }
+      .nav li a{    
+      display: block;
+      font-size: 15px;
+      float: right;
+      margin-top:4px;
+      margin-right: 140px;
+      padding: 0px;
+      margin-left: -110px;
+      }
+   
+      .header-middle{
+          display: block;
+          width: 100%;
+          height: 20%;
+          background-color: #fff;
+      }
+      .navbar-nav{
+          position: absolute;
+          width: 100%;
+      }
+      ul{
+          display: block;
+          list-style-type: none;
+      }
+      .navbar-nav li a{    
+      display: block;
+      font-size: 16px;
+      float: right;
+      margin-top:60px;
+      margin-right: 140px;
+      padding: 0px;
+      margin-left: -110px;
+      }
+      .navbar-nav ul li a:hover{
+        background-color: orange;
+      }
+      .fas{
+        color: rgb(129, 128, 128);
+      }
+      a{
+        color: rgb(163, 162, 162);
+      }
+      .header-middle img{
+          float: left;
+          margin-left: 130px;
+          margin-top: 60px;
+      }
+      .header-middle h2{
+        float: left;
+          margin-left: 10px;
+          margin-top: 55px;
+      }
+      h2::first-letter{
+          color: orange;
+      }
+      h2{
+        color: rgb(163, 162, 162);
+      }
+      .header-middle form select{
+        float: left;
+          margin-left: 30px;
+          margin-top: 60px;
+          color: rgb(163, 162, 162);
+      }
+      .header-middle form select:hover{
+        background-color: orange;
+        color: #fff;
+      }
+      .header-middle form h1 select{
+        float: left;
+          margin-left: 30px;
+          margin-top: 60px;
+          color: rgb(163, 162, 162);
+      }
+      .header-middle form h1 select:hover{
+        background-color: orange;
+      }
+      .header-bottom{
+        width:100%;
+        height: 13%;
+        display: block;
+        margin: 0px;
+        padding: 0px;
+        background-color:#fff;
+      }
+      .menu-area ul{
+        list-style: none;
+      }
+      .menu-area {
+        display:block;
+        text-align: left;
+        position: absolute;
+        top: 24%;
+        left:10%;
+      
+      }
+      .menu-area li a:hover{
+        color:orange;
+      }
+      a{
+        text-decoration: none;
+      }
+      .menu-area ul{
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        display: block;
+        background:#fff;
+        color: #666;
+       
+      }
+      .menu-area ul li {
+        position: relative;
+        cursor: pointer;
+        font-family: poppins;
+        font-size: 18px;
+        letter-spacing: 1px;
+        float: left;
+        width: 120px;
+        height: 40px;
+        line-height: 30px;
+      text-decoration: none;
+      margin-right: -50px;
+      }
+      .dropdown{
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        width: 100%;
+        padding: 0%;
+        
+      }
+      .dropdown li{
+        display: none;
+        background-color: #666;
+        color: #fff;
+        
+      }
+      .dropdown li:hover{
+        color: orange;
+      }
+      .menu-area li:hover .dropdown li{
+        display: block;
+      }
+      .search-box{
+        position: absolute;
+        top:155px;
+        right:125px;
+        height: 20px;
+        padding: 0px;
+        background:rgb(209, 207, 207);
+        width: 150px;
+      }
+      .search-btn{
+        color:blue;
+        float: right;
+        width:10px;
+        height:20px;
+        display: flex;
+        justify-content: right;
+        align-items:center;
+      }
+      .search-txt{
+        border: none;
+        background: none;
+        outline: none;
+        font-size: 15px;
+        float: left;
+        padding: 0px;
+        color:rgb(163, 162, 162);
+      }
+    
+      .container{
+        padding: 0px;
+        width:100% ;
+        min-height: 50%;
+       text-align:center;
+        margin: 0px;
+      }
+      .left-col{
+        width: 50%;
+        float: left;
+        
+        height:50%;
+        text-align:center;
+        margin-top: 6%;
+       margin-left: -10px;
+      }
+      
+      .right-col{
+        width: 50%;
+        float: left;
+        background-color:#fff;
+        height: 80%;
+        margin-top:0%;
+      }
+      .right-col img{
+        box-shadow: 5PX 5PX 5px 5px;
+        background-color: #fff;
+        margin-right: 75px;
+        margin-top:-10px ;
+      }
+      h1::first-letter{
+        color: orange;
+       
+      }
+      h1{
+        font-size: 40px;
+      }
+      h3{
+      color:#000;
+      font-size: 30px;
+      }
+      p{
+        color:#000;
+      }
+      span{
+        color:#fff;
+        background-color: orange;
+        background-size: 50px;
+      }
+      .fa{
+        margin-left:80px;
+        float: left;
+        margin-top: 170px;
+        font-size: 50px;
+      }
+      .right-col h6{
+        margin-right: 90px;
+        float: right;
+        margin-top: 75px;
+         font-size: 50px;
+      }
+      #slider{
+        overflow: hidden;
+      }
+      #slider .container{
+        position: relative;
+        width: 100%;
+        margin: 0%;
+        left: 0px;
+        animation: 20s slider infinite;
+      }
+      
+     
+  
+     </style>
+   </head>
+   <body class="main-layout">
+        <header class="header-top">
+            <div class="navigation">
+                <h2><a href="#"><i class="fas fa-phone-alt"></i>+2 95 01 46 743 </a></h2>
+               <h3><a href="#"><i class="fas fa-envelope"></i> info@domain.com</a></h3>
+           </div>       
+             <div class="nav">
+             <ul>
+              <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li> 
+               <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+               <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+               <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+               <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+             </ul>
+             </div>
+        </header>
+        <header class="header-middle">
+            <div class="navbar-nav">
+                <ul>
+                 <li><a href="#"><i class="fas fa-lock"></i>Login</a></li> 
+                  <li><a href="#"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                  <li><a href="#"> <i class="fas fa-crosshairs"></i> Checkout</a></li>
+                  <li><a href="#"> <i class="fas fa-star"></i> Wishlist</a></li>
+                  <li><a href="#"> <i class="fas fa-user"></i> Account</a></li>
+                </ul>
+                <div> <img src="file:///C:/Users/CHROME/Downloads/bag.jpg" width="60px" height="20px">
+                    <h2>E-SHOPPER</h2>
+                    <form>
+                        <select name="USA">
+                            <option value="USA">USA</option>
+                            <option value="Canada">Canada</option>
+                            <option value="UK">UK</option>
+                        </select>
+                        <h1><select name="DOLLAR">
+                            <option value="Dollar">DOLLAR</option>
+                            <option value="Canadisn Dollar">Canadian Dollar</option>
+                            <option value="Pound">Pound</option>
+                           
+                        </select></h1>
+                    </form>
+                    
+                </div>
+        </header>
+        <header class="header-bottom">
+          <div class="menu-area">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#shop">Shop<i class="fas fa-angle-down"></i></a>
+                <ul class="dropdown">
+                  <li>Products</li>
+                  <li>Product\Details</li>
+                  <li>CheckOut</li>
+                  <li>Cart</li>
+                  <li>Login</li>
+                </ul>
+              </li>
+              <li><a href="#blog">Blog<i class="fas fa-angle-down"></i></a>
+              <ul class="dropdown">
+                <li>Blog list</li>
+                <li>Blog single</li>
+              </ul>
+              </li>
+              <li><a href="#404">404</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="search-box">
+             <input type="text" name="box" class="search-txt" size="13" placeholder="Search">
+               <a class="search-btn" href="#"><i class="fas fa-search"></i></a>
+            </div>
+        </header>
+        <div id="slider">
+           <div class="container">
+            <div class="left-col">    
+              <a href="#"><i class="fa fa-angle-left"></i></a>
+           <h1>E-SHOPPER</h1>
+           <h3>Free E-Commerce Template</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do<br/>
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <h4><span>Get it now</span></h4>
+         </div>
+         <div class="right-col">
+      
+           <img src="file:///C:/Users/CHROME/Downloads/girl1.jpg" height="400px" width="400px">
+           <h6><a href="#"><i class="fa fa-angle-right"></i></a></h6>
+        
+         </div>
+         <div class="left-col">
+          
+           <h1>E-SHOPPER</h1>
+           <h3>100% Responsive Design</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do<br/>
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <h4><span>Get it now</span></h4>
+         </div>
+         <div class="right-col">
+      
+           <img src="file:///C:/Users/CHROME/Downloads/girl5.jpg" height="400px" width="400px">
+         
+         </div>
+         <div class="left-col">
+           <h1>E-SHOPPER</h1>
+           <h3>100% Responsive Design</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do<br/>
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <h4><span>Get it now</span></h4>
+         </div>
+         <div class="right-col">
+           <img src="file:///C:/Users/CHROME/Downloads/girl.jpg" height="400px" width="400px">
+         </div>
+         </div>
+    </div>
+   </body>
+</html>

@@ -1,0 +1,15 @@
+<script>
+    const revInt = (n)=>{
+        if(n < 0){
+            return -1*parseInt(n.toString().split('').reverse().join(''));
+        }
+      
+        return parseInt(n.toString().split('').reverse().join(''));
+        
+      
+    }
+    console.log({
+        testcase1:revInt(21),
+        testcase2:revInt(-12)
+    })
+</script>

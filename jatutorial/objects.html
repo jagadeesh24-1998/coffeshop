@@ -1,0 +1,31 @@
+<html>
+    <script>
+        
+    var emp = {
+    'firstName':'jagadeesh',
+    'lastName':'gandlachintha',
+    'dob':'24/02/1998',
+    'age':23,
+    'location':'tirupathi'
+   }
+
+document.write(`<table border="2">
+    <tr><th>firstName</th>
+        <th>lastName</th>
+        <th>dob</th>
+        <th>age</th>
+        <th>location</th>
+        </tr><tr></tr>`);
+
+
+   for(key in emp){
+       document.write(`<td>${emp[key]}</td>`);
+    //document.write(key+'-'+emp[key]);
+    document.write("<br>")
+     }
+
+    </script>
+
+
+</html>
+

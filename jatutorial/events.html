@@ -1,0 +1,23 @@
+<html>
+   <body>
+       <div style="height: 400px; width: 500px; background-color: aquamarine;" onmouseover="abc(event)">
+
+          <h1 id="d1">
+
+          </h1>
+
+       </div>
+
+     <script>
+      function abc(e){
+          console.log(e);
+          sdocument.getElementById("d1").innerHTML = "X: "+e.offsetX+" Y:"+e.offsetY;
+
+      }
+   </script>
+
+            
+  </body>
+
+
+</html>

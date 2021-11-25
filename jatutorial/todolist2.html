@@ -1,0 +1,84 @@
+<html>
+
+    <style>
+        li{cursor:pointer}
+    </style>
+
+    <body>
+        <input type="text" id="txt">
+        <button onclick="add()">Add</button>
+        <button onclick="editLi()">Edit</button>
+        <button onclick="removeLi()">Remove</button>
+        <ul id="list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+        </ul>
+        <script>
+
+              var inputText = document.getElementById("txt"),
+              items = document.querySelectorAll("#list li"),
+              tab = [], index;
+              
+
+           for(var i=0; i<items.length; i++){
+               tab.push(items[i].innerHTML);
+           }
+           for(var i=0; i<items.length; i++){
+               items[i].onclick = function(){
+                  index = tab.indexOf(this.innerHTML);
+                  console.log(this.innerHTML + "INDEX=" + index);
+
+                  inputText.value = this.innerHTML;
+               };
+           }
+
+           function refreshArray()
+           {
+             tab.length = 0;
+
+             items = document.querySelectorAll("#list li");
+
+           for(var i=0; i<items.length; i++){
+               tab.push(items[i].innerHTML);
+           }
+
+        function add(){
+            var listNode = document.getElementById("list");
+            textNode = document.createTextNode(inputText.value);
+            liNode = document.createElement("li");
+
+            liNode.appendChild(textNode);
+            listNode.appendChild(liNode);
+
+            refreshArray();
+
+            listNode.onclick = function(){
+                  index = tab.indexOf(listNode.innerHTML);
+                  console.log(listNode.innerHTML + "INDEX=" + index);
+
+                  inputText.value = listNode.innerHTML;
+               };
+
+        }
+
+
+        function editLi(){
+            items[index].innerHTML = inputText.value;
+            refreshArray();
+         
+        };
+
+        function removeLi(){
+            refreshArray();
+            if(items.length > 0){
+                items[index].parentNode.removeChild(items[index]);
+                  inputText.value = "";
+            };
+           
+        }
+
+    }
+        </script>
+    </body>
+</html>

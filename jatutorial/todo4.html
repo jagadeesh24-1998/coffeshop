@@ -1,0 +1,106 @@
+
+    
+
+<html>
+    <head>
+        
+        
+        <style>
+            li{cursor: pointer}
+        </style>
+        
+    </head>
+    <body>
+       
+        <input type="text" id="d1">
+        <button onclick="addLI()">Add</button>
+        <button onclick="editLI()">Edit</button>
+        <button onclick="deleteLI()">Delete</button>
+        
+        <ul id="list">
+            
+        </ul>
+            
+        <script>
+            
+            var task = document.getElementById("d1"),
+                 items = document.querySelectorAll("li"),
+                 tab = [], index;
+         
+            
+             
+             for(var i = 0; i < items.length; i++){
+                 tab.push(items[i].innerHTML);
+             }
+             
+             
+             for(var i = 0; i < items.length; i++){
+                 
+                 items[i].onclick = function(){
+                     index = tab.indexOf(this.innerHTML);
+                     console.log(this.innerHTML + " INDEX = " + index);
+                    
+                     task.value = this.innerHTML
+                 };
+                 
+             }
+            
+            function refreshArray(){
+            
+              
+                tab.length = 0;
+                items = document.querySelectorAll("li");
+               
+                for(var i = 0; i < items.length; i++){
+                 tab.push(items[i].innerHTML);
+               }
+            }
+            function addLI(){
+                
+                var task = document.getElementById("d1").value;
+                 var Newli = document.createElement("li");
+                var t = document.createTextNode(task);
+                   
+                    
+                    Newli.appendChild(t);
+                           
+                    if(task!=''){
+                        var mylist=document.getElementById("list");
+                    mylist.appendChild(Newli);
+                    }else{
+                        alert('Enter any Text')
+                    }
+                   
+                    
+                    refreshArray();
+                    
+                    Newli.onclick = function(){
+                     index = tab.indexOf(Newli.innerHTML);
+                     console.log(Newli.innerHTML + " INDEX = " + index);
+                  
+                     task.value = Newli.innerHTML;
+                 };
+                    
+             }
+             
+             function editLI(){
+                refreshArray();
+                 items[index].innerHTML = task;
+                
+              };
+              
+              function deleteLI(){
+                  
+                      refreshArray();
+                      if(items.length > 0){
+                          items[index].parentNode.removeChild(items[index]);
+                          task.value = "";
+                      }
+                      
+                      
+              }
+            
+        </script>
+        
+    </body>
+</html>

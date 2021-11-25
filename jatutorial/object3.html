@@ -1,0 +1,37 @@
+<html>
+    <style>
+
+    </style>
+    
+  
+<body>
+   <input type="text" id="d1">
+   <button onclick="add()">click</button>
+   <ul id="d3">
+
+   </ul>
+   
+
+<script>
+    function add(){
+       var task = document.getElementById("d1").value;
+       var newLi = document.createElement("li");
+       var t = document.createTextNode(task);
+        newLi.appendChild(t);
+        
+
+      if(task != '' ){
+        var mylist = document.getElementById("d3")
+        mylist.appendChild(newLi);
+      }else{
+        alert('Enter any text')
+      }
+
+
+    }
+
+</script>
+
+</body>
+
+</html>

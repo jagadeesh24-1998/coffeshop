@@ -1,0 +1,18 @@
+<script>
+    const maxChar =(str)=>{
+        let obj = {};
+        for(let Char of str){
+            (!obj[Char])?obj[Char]=1:obj[Char]++;
+        }
+        let maxNum = 0;
+        let maximumChar = '';
+        for(let Char in obj){
+            if(obj[Char] >= maxNum){
+                maxNum = obj[Char];
+                maximumChar = Char;
+            }
+        }
+        console.log(`${maximumChar} appears ${maxNum} times`);
+    }
+    maxChar("jagadeesh gandlachintha");
+</script>
