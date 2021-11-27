@@ -1,5 +1,0 @@
-<!doctype.html>
-<head>
-<title>hello google</title>
-<body imgsrc=""
-</head>
